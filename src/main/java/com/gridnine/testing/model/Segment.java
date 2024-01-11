@@ -9,17 +9,17 @@ public class Segment {
 
     private final LocalDateTime arrivalDate;
 
-    Segment(final LocalDateTime dep, final LocalDateTime arr) {
+    public Segment(final LocalDateTime dep, final LocalDateTime arr) {
         departureDate = Objects.requireNonNull(dep);
         arrivalDate = Objects.requireNonNull(arr);
     }
 
-    LocalDateTime getDepartureDate() {
-        return departureDate;
+    public LocalDateTime getArrivalDate() {
+        return arrivalDate;
     }
 
-    LocalDateTime getArrivalDate() {
-        return arrivalDate;
+    public LocalDateTime getDepartureDate() {
+        return departureDate;
     }
 
     @Override
